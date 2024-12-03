@@ -181,23 +181,6 @@ header {
     font-style: italic;
 }
 
-.banner {
-    width: 100%;
-    height: auto; 
-    overflow: hidden;
-    position: relative;
-    margin-top: 60px; 
-    margin-bottom: 0;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    max-width: 1920px; 
-    max-height: 357px;
-    object-fit: cover; 
-}
-
 h1 {
     text-align: center;
     text-decoration: underline;
@@ -206,36 +189,6 @@ h1 {
     font-size: 1.5rem; 
     color: #FF595A; 
     margin: 20px 0; 
+    margin-top: 4rem;
 }
 
-.reviews {
-    position: fixed;
-    bottom: 20px;
-    left: 20px; 
-    background-color: #fff; 
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px; 
-    height: 125px; 
-}
-
-.review {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.review img {
-    width: 40px; 
-    height: 40px; 
-    margin-right: 10px;
-}
-
-.review p {
-    margin: 0;
-    font-size: 1rem; 
-    color: #FF595A;
-    font-weight: bold;
-}
