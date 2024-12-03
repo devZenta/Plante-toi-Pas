@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+  }
+  
+body {
+    height: 100vh;
+    background-color:  #001233;
+    background-size: cover;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #CAC0B3;
+    font-size: 1rem
+}
+
+a:hover {
+    color: #FF595A;
+}
+
+header {
+    position: relative;
+    padding: 2rem 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar .categories {
+    display: flex;
+    gap: 5rem;
+}
+
+.navbar .categories a {
+    font-size: 1.0rem; 
+}
+
+.navbar .toggle_btn {
+    color: #CAC0B3;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: #FF595A;
+    color: #CAC0B3;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #CAC0B3;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 300px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .navbar .categories,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+#enter {
+    text-align: center;
+    color: #CAC0B3;
+    font-size: 4rem; 
+    margin-top: 0.5rm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 600px); 
+}
+
+#enter .button {
+    display: inline-block;
+    background-color: #FF595A;
+    color: #CAC0B3;
+    padding: 1.5rem 4rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    margin-top: 1rem;
+}
+
+#enter .button:hover {
+    scale: 1.05;
+    color: #CAC0B3;
+}
+
+#enter .button:active {
+    scale: 0.95;
+}
+
+#enter p {
+    margin-top: 2rem; 
+    font-size: 1.2rem; 
+    color: #CAC0B3; 
+    font-style: italic;
+}
+
+.banner {
+    width: 100%;
+    height: auto; 
+    overflow: hidden;
+    position: relative;
+    margin-top: 60px; 
+    margin-bottom: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-width: 1920px; 
+    max-height: 357px;
+    object-fit: cover; 
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem; 
+    color: #FF595A; 
+    margin: 20px 0; 
+}
+
+.reviews {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; 
+    height: 125px; 
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px;
+}
+
+.review p {
+    margin: 0;
+    font-size: 1rem; 
+    color: #FF595A;
+    font-weight: bold;
+}
