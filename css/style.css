@@ -19,7 +19,7 @@ section > * {
     margin: 14px;
 }
 #uploaded-image {
-   display: none; /* Cache le canvas */
+   display: none; 
 }
 
 #image-upload {
@@ -77,7 +77,7 @@ section > * {
   
 body {
     height: 100vh;
-    background-color:  #f4f6f7;
+    background-color:  #ecf0f1;
     background-size: cover;
     background-position: center;
 }
@@ -260,4 +260,13 @@ h1 {
     color: #FF595A; 
     margin: 20px 0; 
     margin-top: 4rem;
+}
+
+.categories a.active {
+    text-decoration: underline;
+    color: #FF595A; /* Change la couleur du texte */
+    font-weight: bold; /* Rend le texte en gras */
+    background-color: #ecf0f1; /* Ajoute un fond */
+    padding: 5px 10px; /* Ajoute du padding */
+    border-radius: 5px; 
 }
