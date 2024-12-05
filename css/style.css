@@ -260,13 +260,40 @@ h1 {
     color: #FF595A; 
     margin: 20px 0; 
     margin-top: 4rem;
+    margin-bottom: 20px;
 }
 
 .categories a.active {
     text-decoration: underline;
-    color: #FF595A; /* Change la couleur du texte */
-    font-weight: bold; /* Rend le texte en gras */
-    background-color: #ecf0f1; /* Ajoute un fond */
-    padding: 5px 10px; /* Ajoute du padding */
+    color: #FF595A; 
+    font-weight: bold; 
+    background-color: #ecf0f1; 
+    padding: 5px 10px; 
     border-radius: 5px; 
+}
+
+#info {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#info h2 {
+    color: #001233;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#info p {
+    color: #001233;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#model p {
+    color: #001233;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
 }
